@@ -1,6 +1,7 @@
+package task3;
 import java.util.Scanner;
 
-public class Main3 {
+public class Main {
     static void printIntArr(int arr[]) 
     {
         for (int i = 0; i < arr.length; i++)
