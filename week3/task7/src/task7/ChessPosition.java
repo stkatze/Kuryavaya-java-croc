@@ -75,11 +75,11 @@ public class ChessPosition {
 	}
 
 	private String xIndexOutOfBoundsErrorMessage(int a) {
-		return "Значение X = " + a + " правильное. Оно должно быть от 0 до " + (BoardSize - 1) + "!";
+		return "Значение X = " + a + " неверное. Оно должно быть от 0 до " + (BoardSize - 1) + "!";
 	}
 
 	private String yIndexOutOfBoundsErrorMessage(int a) {
-		return "Значение Y = " + a + " правильное. Оно должно быть от 0 до " + (BoardSize - 1) + "!";
+		return "Значение Y = " + a + " неверное. Оно должно быть от 0 до " + (BoardSize - 1) + "!";
 	}
 
 	@Override
