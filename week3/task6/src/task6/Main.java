@@ -12,10 +12,10 @@ public class Main {
 				+ "        System.out.println(\"Hi!\"); // :)\n" + "    }\n" + "} // the end\n"
 				+ "// to be continued...\n";
 
-		System.out.print(removeComments(str));
+		System.out.print(removeJavaComments(str));
 	}
 
-	static String removeComments(String str) {
+	static String removeJavaComments(String str) {
 		StringBuilder noComments = new StringBuilder();
 
 		Pattern pattern = Pattern.compile("(/\\*([\\S\\s]+?)\\*/)|(//.*)");
