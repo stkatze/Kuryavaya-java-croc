@@ -12,10 +12,10 @@ public class Main {
 				+ "        System.out.println(\"Hi!\"); // :)\n" + "    }\n" + "} // the end\n"
 				+ "// to be continued...\n";
 
-		System.out.print(removeJavaComments(str));
+		System.out.print(removeComments(str));
 	}
 
-	static String removeJavaComments(String str) {
+	static String removeComments(String str) {
 		StringBuilder noComments = new StringBuilder();
 
 		Pattern pattern = Pattern.compile("(/\\*([\\S\\s]+?)\\*/)|(//.*)");
@@ -24,6 +24,7 @@ public class Main {
 			matcher.appendReplacement(noComments, "");
 		}
 		matcher.appendTail(noComments);
+
 		return String.valueOf(noComments);
 	}
 }
