@@ -15,7 +15,7 @@ public class Main {
 		byte[] bytesArray = new byte[(int) file.length()];
 		fis.read(bytesArray);
 		String s = new String(bytesArray);
-		String[] data = s.split("\\s+");
+		String[] data = s.split("\\s+([^\\s|,|!|?|.])");
 		for (int i = 0; i < data.length; i++) {
 			count++;
 		}
