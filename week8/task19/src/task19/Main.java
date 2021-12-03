@@ -5,7 +5,7 @@ import java.io.*;
 public class Main {
 	public static void main(String[] args) {
 
-		try (FileWriter writer = new FileWriter("Hello world.txt", false)) {
+		try (FileWriter writer = new FileWriter("Hello_world.txt", false)) {
 			String text = "Hello,Wold!";
 			writer.write(text);
 			writer.append('\n');
